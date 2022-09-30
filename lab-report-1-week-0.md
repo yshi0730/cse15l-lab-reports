@@ -1,1 +1,2 @@
-![Image](https://github.com/yshi0730/cse15l-lab-reports/blob/cbf7856808a5bd317faab826760b9d9d785e3821/Screen%20Shot%202022-09-26%20at%202.32.14%20PM.png)
+
+<img width="1470" alt="Screen Shot 2022-09-26 at 2 32 14 PM" src="https://user-images.githubusercontent.com/78475359/193178895-af78777f-dd28-419e-a72a-c29ac91902b6.png">
