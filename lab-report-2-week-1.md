@@ -75,6 +75,7 @@ Tutorial of logging into a course-specific account on ieng6.
       ssh-keygen 
       ```
      And you will see message like this:
+
      <img width="577" alt="Screen Shot 2022-09-29 at 11 35 05 PM" src="https://user-images.githubusercontent.com/78475359/193205867-254710df-4616-4c36-a921-d7ec530c93f7.png">
      
    2. Make a directory on remote server named .ssh with 
@@ -82,12 +83,14 @@ Tutorial of logging into a course-specific account on ieng6.
       mkdir .ssh
       ```
    3. Now you can ssh and scp on your computer without entering password of your account:
+
      <img width="646" alt="Screen Shot 2022-09-29 at 11 37 08 PM" src="https://user-images.githubusercontent.com/78475359/193206207-1dce3240-b868-4946-a186-209d7696dc6a.png">
 
 * Optimizing Remote Running
 
   * When you ssh, you can type the command at the end of the ssh command to execute the command then automatically logging out. 
     For example:
+
     <img width="388" alt="Screen Shot 2022-09-29 at 11 40 06 PM" src="https://user-images.githubusercontent.com/78475359/193206648-03b78359-324c-4191-9851-2b559bb91d0a.png">
 
     
