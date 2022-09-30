@@ -53,7 +53,11 @@ Tutorial of logging into a course-specific account on ieng6.
       ```
       where zz is replaced by your unique account name.
       Enter password. 
-  3. If you successfully logged into remote server, type **ls** and see if the file is there. You should see something like this.<img width="229" alt="Screen Shot 2022-09-29 at 11 01 49 PM" src="https://user-images.githubusercontent.com/78475359/193200909-21a3b942-5932-43c6-be11-51bd53b960ff.png">Run code that you just copied both locally and on remote server with:
+  3. If you successfully logged into remote server, type **ls** and see if the file is there. You should see something like this.
+
+<img width="229" alt="Screen Shot 2022-09-29 at 11 01 49 PM" src="https://user-images.githubusercontent.com/78475359/193200909-21a3b942-5932-43c6-be11-51bd53b960ff.png">
+
+Run code that you just copied both locally and on remote server with:
    
     ```
     javac WhereAmI.java
