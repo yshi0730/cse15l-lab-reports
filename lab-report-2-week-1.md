@@ -1,4 +1,4 @@
-Tutorial of logging into a course-specific account on ieng6.
+Lab2 Report: Tutorial of logging into a course-specific account on ieng6.
 ---
 * Installing Visual Studio Code
 
