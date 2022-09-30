@@ -55,21 +55,21 @@ Tutorial of logging into a course-specific account on ieng6.
       Enter password. 
   3. If you successfully logged into remote server, type **ls** and see if the file is there. You should see something like this.
 
-<img width="229" alt="Screen Shot 2022-09-29 at 11 01 49 PM" src="https://user-images.githubusercontent.com/78475359/193200909-21a3b942-5932-43c6-be11-51bd53b960ff.png">
+      <img width="229" alt="Screen Shot 2022-09-29 at 11 01 49 PM" src="https://user-images.githubusercontent.com/78475359/193200909-21a3b942-5932-43c6-be11-51bd53b960ff.png">
 
-Run code that you just copied both locally and on remote server with:
+      Run code that you just copied both locally and on remote server with:
    
-    ```
-    javac WhereAmI.java
-    java WhereAmI
-    ```
+      ```
+      javac WhereAmI.java
+      java WhereAmI
+     ```
     
-   And you will see this result:
+      And you will see this result:
    
-   <img width="331" alt="Screen Shot 2022-09-29 at 11 19 29 PM" src="https://user-images.githubusercontent.com/78475359/193203550-da4bd579-66d1-4374-bba8-cb18a8dc332d.png">
-   <img width="363" alt="Screen Shot 2022-09-29 at 11 21 20 PM" src="https://user-images.githubusercontent.com/78475359/193203819-9f76522c-e4ff-4e4a-b822-21e28ce72913.png">
+      <img width="331" alt="Screen Shot 2022-09-29 at 11 19 29 PM" src="https://user-images.githubusercontent.com/78475359/193203550-da4bd579-66d1-4374-bba8-cb18a8dc332d.png">
+      <img width="363" alt="Screen Shot 2022-09-29 at 11 21 20 PM" src="https://user-images.githubusercontent.com/78475359/193203819-9f76522c-e4ff-4e4a-b822-21e28ce72913.png">
    
-   The output will be different because the getProperty function gets the property of your computer in the first run and the property of the remote server in the second run.
+        The output will be different because the getProperty function gets the property of your computer in the first run and the property of the remote server in the second run.
    
 
    
@@ -93,9 +93,9 @@ Run code that you just copied both locally and on remote server with:
 * Optimizing Remote Running
 
   * When you ssh, you can type the command at the end of the ssh command to execute the command then automatically logging out. 
-    For example:
+      For example:
 
-    <img width="388" alt="Screen Shot 2022-09-29 at 11 40 06 PM" src="https://user-images.githubusercontent.com/78475359/193206648-03b78359-324c-4191-9851-2b559bb91d0a.png">
+      <img width="388" alt="Screen Shot 2022-09-29 at 11 40 06 PM" src="https://user-images.githubusercontent.com/78475359/193206648-03b78359-324c-4191-9851-2b559bb91d0a.png">
 
     
 
