@@ -12,6 +12,7 @@ Lab2 Report: Tutorial of logging into a course-specific account on ieng6.
       ```
       But replace "zz" with your own course account.
       
+
       2. Type in Yes if you get a messsage asking you "Are you sure you want to continue connecting (yes/no/[fingerprint])?
       
       3. Then type in your password; note that you won't see anything as you type, so be careful when you type, or you can type your password somewhere else and copy and paste it into here.
@@ -53,6 +54,9 @@ Lab2 Report: Tutorial of logging into a course-specific account on ieng6.
       ```
       where zz is replaced by your unique account name.
       Enter password. 
+      
+      (I scp a different file but the idea is the same)
+      <img width="1187" alt="Screen Shot 2022-10-13 at 5 39 06 PM" src="https://user-images.githubusercontent.com/78475359/195736627-c6089b34-abb2-4efe-b2a1-ebd1b3a34dfc.png">
   3. If you successfully logged into remote server, type **ls** and see if the file is there. You should see something like this.
 
       <img width="229" alt="Screen Shot 2022-09-29 at 11 01 49 PM" src="https://user-images.githubusercontent.com/78475359/193200909-21a3b942-5932-43c6-be11-51bd53b960ff.png">
@@ -94,6 +98,10 @@ Lab2 Report: Tutorial of logging into a course-specific account on ieng6.
 
   * When you ssh, you can type the command at the end of the ssh command to execute the command then automatically logging out. 
       For example:
+      ```
+      ssh cs15lfa22cs@ieng6.ucsd.edu "ls"
+      ```
+      This command loggs you in to the server and list files in the directory. Then, it automatically loggs you out from the server, returning to your local computer.
 
       <img width="388" alt="Screen Shot 2022-09-29 at 11 40 06 PM" src="https://user-images.githubusercontent.com/78475359/193206648-03b78359-324c-4191-9851-2b559bb91d0a.png">
 
