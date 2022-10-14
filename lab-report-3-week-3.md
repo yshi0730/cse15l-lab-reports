@@ -63,7 +63,7 @@ The "search" called the "else if" statement, which loops through the ArrayList a
 
 ## ArrayExample 
 
-1. Reverse() Method
+### Reverse() Method
 
 - Test
 
@@ -104,39 +104,45 @@ The buggy code wants to create new int[] newArray to store the elements of the o
 Therefore, when my input is {1,2,3,4,7,4,2}, with the bug, the first element of the returned array is not 2 as expected. 
 
 
+## ListExample
 
-2. ReverseInPlace() Method
+### Filter method
 - Test
 ```
-@Test
-  public void testreverseInPlace(){
-    int[] input1 = {1,2,3,4,7,4,2};
-    int[] expected = {2,4,7,4,3,2,1};
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(expected, input1);
-  }
+public class ListTest {
+    @Test
+    public void testFilter(){
+        List<String> contents = Arrays.asList("Apple","Pen","America","Pineapple","Pear"); 
+        List<String> result = ListExamples.filter(contents, new LongWordChooser());
+        
+        String[] expected = {"America, Pineapple"};
+        String[] actual = new String[result.size()];
+        
+        actual = result.toArray(actual);
+        assertArrayEquals(expected,actual);
+    }
+}
 ```
 - Symptom
-<img width="745" alt="Screen Shot 2022-10-12 at 6 36 52 PM" src="https://user-images.githubusercontent.com/78475359/195478627-b7bf491b-9eda-4bb8-a1cf-0be232c79647.png">
+<img width="882" alt="Screen Shot 2022-10-13 at 5 03 17 PM" src="https://user-images.githubusercontent.com/78475359/195733379-a228c8c6-c017-4273-ba12-85bfe259a92a.png">
 
 - Bug and Fix
-
-The bug is that it replaces the i th element by the length-i-1 th element; after reaching the mid point of the array, it continues to iterate and incorrectly changing the array. To fix it, I create a new int array to store the reversed elements, and changing arr accordingly in another for loop.
+The incorrect code is commented out, replaced by correct one;
 ```
-static void reverseInPlace(int[] arr) {
-    int[] newArray = new int[arr.length];
-    for(int i = 0; i < arr.length; i += 1) {
-      newArray[i] = arr[arr.length - i - 1];
+static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        // result.add(0, s);
+        result.add(s);
+      }
     }
-    for(int i = 0; i < arr.length; i++){
-      arr[i] = newArray[i];
-    }
+    return result;
   }
 ```
+Running test one more time, it passes.
+<img width="906" alt="Screen Shot 2022-10-13 at 5 04 00 PM" src="https://user-images.githubusercontent.com/78475359/195733453-212ec7eb-ac55-4256-af58-d6104b2ccc42.png">
 
-- Connection between the bug and symptom
+- Connection between the symptom and the bug.
 
-With the bug, after the iteration reaches the mid point, when it tries to change the i th element to the length-1-i th element, it ends up keeping the element. For example, an original array of {1,3,5,7,9} will be changed to {9,7,5,7,9} with the bug.
-
-## 
-
+The bug was that it uses "result.add(0,s);". ".add" can take two parameters- index and content- but index is optional. result.add(0,s) will only put the qualified string to the first position of the result list, which is incorrect. I created a StringChecker called Longwordchooser, which returns true if the string is longer than 6. In my test, my input list has two qualified strings, "America" and "Pineapple", but the buggy code can only add qualified element to the first position, which results in a list with only "Pineapple", so the test failed.
