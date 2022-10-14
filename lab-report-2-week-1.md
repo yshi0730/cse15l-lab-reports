@@ -21,11 +21,11 @@ Lab2 Report: Tutorial of logging into a course-specific account on ieng6.
           It's likely that you have to reset your password first and login afterward. You might wait 15-60min for the password to take into effect.
       
  * Trying some commands both with your computer and the remote computer
-    * cd 
-    * ls
-    * pwd
-    * mkdir
-    * cp
+    * cd (change directory)
+    * ls (list files)
+    * pwd (print working directory)
+    * mkdir (create directory)
+    * cp (copy file or directory)
     * cat /home/linux/ieng6/cs15lfa22/public/hello.txt
     * exit/ctrl-D (to log out remote server)
     You will see something like this:
