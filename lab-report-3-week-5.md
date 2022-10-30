@@ -70,7 +70,7 @@ sys@Syss-Air 911report % grep -h "casualties" *
                 near-term "spectacular" terrorist attacks resulting in numerous casualties. Other
 ```
 ## grep -i
-* This command searches for lines containing the specific pattern regardeless of upper/lower case. 
+* This command searches for lines containing the specific pattern regardeless of upper/lower case. (-i for ignore)
 * Example 1
 ```
 sys@Syss-Air 911report % grep -i "PresIDEnt" chapter-2.txt
