@@ -1,7 +1,7 @@
 # Three More Commands for grep 
 ## grep -l
 * This command shows the names of files containing the specific pattern. This can be useful when we know a line of text but don't know which file it comes from. Then we can use this command to find the specific files.
-* Also note that replacing -l with -L shows names of files not containing the specific pattern.
+
 * Example 1 : Search for files containing the word "Tuesday" in the 911report folder.
 ```
 sys@Syss-Air 911report % grep -l "Tuesday" *    
