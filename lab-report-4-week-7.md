@@ -10,3 +10,7 @@
 * The :s command substitutes patterns. 12,30 means it searches for the pattern from the line 12 to 30 (the FilerHelpers class). If I don't declare the range, it will replace the "start" in "Server.start()" in line 74, which will cause an error.
 
 # Part 2
+* I spent about 5 minutes 20s doing it the first way;
+* I spent about 4 minutes 30s doing the second way.
+* I would prefer editing with Vim remotely than editing locally then scp to the remote server. Logging into the remote server and editing it does not involve moving files between the local computer and thus saves time. If I don't already have pasted the appropriate scp command, typing this command would take 10-20 seconds.
+* I might edit files locally and then scp into remote server if I'm doing projects that I need to track and record changes. For example, when I'm using github repo locally, I get to push changes to the repo and github records these changes. I can also revert to any project history(versions) with github. If I do everything on remote server, I might not be able to track and restore changes. So only for minor editing would I do it directly on the remote server.
