@@ -1,6 +1,6 @@
-## Grade.sh Script
+# Grade.sh Script
 
-# Code
+## Code
 ```
 set -e
 
@@ -45,7 +45,7 @@ else
 fi
 ```
 
-# Grading three student submissions
+## Grading three student submissions
 * https://github.com/ucsd-cse15l-f22/list-methods-corrected
 <img width="727" alt="Screen Shot 2022-11-27 at 4 11 39 PM" src="https://user-images.githubusercontent.com/78475359/204167481-94290165-a04a-49fc-b595-411a072bf32b.png">
 
@@ -55,6 +55,7 @@ fi
 * https://github.com/ucsd-cse15l-f22/list-methods-filename
 <img width="732" alt="Screen Shot 2022-11-27 at 4 13 36 PM" src="https://user-images.githubusercontent.com/78475359/204167583-34709251-b32e-4686-9540-9979746492c6.png">
 
-
-
+## Trace of grade.sh with one submission example
+* https://github.com/ucsd-cse15l-f22/list-methods-filename
+* 
 
