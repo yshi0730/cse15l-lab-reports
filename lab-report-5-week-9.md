@@ -77,6 +77,7 @@ else
     exit 1
 fi
 ```
+
 It first looks for ListExamples.java, the correct file to be there. If it finds it, we give the submission 1/4. Else, we give the submission 0/4 and exit the script.
 
 For the example we are evaluating, it only contains a file named ListMethods.java, which is incorrect, so the scripts cannot find ListExamples.java. It won't run the then statement and it triggers the else statement. It receives 0/4 and the script exits. Standard output will be "File not found, Grade: 0/4", the only echo statement inside the else statement. It has no standard error. The return code for the echo statement is 0. Then the script exits successfully with code 1 indicating the student submission did not go through every steps. All lines of code after will not run since the script has terminated. They won't have any standard output, error, and return code.
