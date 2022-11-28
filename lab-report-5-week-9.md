@@ -57,6 +57,7 @@ fi
 
 ## Trace of grade.sh with one submission example
 * https://github.com/ucsd-cse15l-f22/list-methods-filename
+
 ```
 set -e
 
@@ -66,6 +67,7 @@ cp TestListExamples.java student-submission
 cd student-submission
 CPATH=.:../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar
 ```
+
 * These lines remove any previous files in student-submission folder so that we can clone a new student submission and test it. Then it copies the TestListExamples.java into that folder for later test. Then we cd into the student-submission folder. CPATH is for later more convenient use of the java path. These lines have empty standard output and error. Their return code will be 0.
 
 ```
